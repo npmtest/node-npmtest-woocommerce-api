@@ -1,1 +1,40 @@
-{     "devDependencies": {         "woocommerce-api": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-woocommerce-api",     "homepage": "https://github.com/npmtest/node-npmtest-woocommerce-api",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-woocommerce-api.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [woocommerce-api (v1.4.2)](https://github.com/woocommerce/wc-api-node#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-woocommerce-api.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-woocommerce-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-woocommerce-api.svg)](https://travis-ci.org/npmtest/node-npmtest-woocommerce-api)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha",
+        "woocommerce-api": "*"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-woocommerce-api",
+    "keywords": [
+        "coverage",
+        "test",
+        "woocommerce-api"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_woocommerce_api.js",
+    "name": "npmtest-woocommerce-api",
+    "nameAlias": "npmtest_woocommerce_api",
+    "nameOriginal": "npmtest-woocommerce-api",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-woocommerce-api.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
