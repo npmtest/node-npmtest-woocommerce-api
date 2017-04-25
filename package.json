@@ -1,6 +1,6 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
-    "description": "#### test coverage for  [woocommerce-api (v1.4.2)](https://github.com/woocommerce/wc-api-node#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-woocommerce-api.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-woocommerce-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-woocommerce-api.svg)](https://travis-ci.org/npmtest/node-npmtest-woocommerce-api)",
+    "description": "#### basic test coverage for  [woocommerce-api (v1.4.2)](https://github.com/woocommerce/wc-api-node#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-woocommerce-api.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-woocommerce-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-woocommerce-api.svg)](https://travis-ci.org/npmtest/node-npmtest-woocommerce-api)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha",

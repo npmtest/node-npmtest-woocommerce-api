@@ -1,6 +1,6 @@
 # npmtest-woocommerce-api
 
-#### test coverage for  [woocommerce-api (v1.4.2)](https://github.com/woocommerce/wc-api-node#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-woocommerce-api.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-woocommerce-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-woocommerce-api.svg)](https://travis-ci.org/npmtest/node-npmtest-woocommerce-api)
+#### basic test coverage for  [woocommerce-api (v1.4.2)](https://github.com/woocommerce/wc-api-node#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-woocommerce-api.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-woocommerce-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-woocommerce-api.svg)](https://travis-ci.org/npmtest/node-npmtest-woocommerce-api)
 
 #### A Node.js wrapper for the WooCommerce REST API
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-woocommerce-api/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-woocommerce-api/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-woocommerce-api/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-woocommerce-api/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-woocommerce-api/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-woocommerce-api/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-woocommerce-api/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-woocommerce-api/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-woocommerce-api/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-woocommerce-api/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-woocommerce-api/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-woocommerce-api/build/coverage.html/index.html)
 
@@ -89,7 +89,8 @@
         "pretest": "npm run-script lint && npm run-script checkStyle",
         "test": "istanbul cover ./node_modules/.bin/_mocha test.js"
     },
-    "version": "1.4.2"
+    "version": "1.4.2",
+    "bin": {}
 }
 ```
 
